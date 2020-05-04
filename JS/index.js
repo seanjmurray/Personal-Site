@@ -3,8 +3,8 @@ window.onscroll = () => {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
-  document.getElementById('bar').style.width = scrolled + '%'};
-
+  document.getElementById('bar').style.width = scrolled + '%'
+};
 
 
 var app = document.getElementById('typeWrite');
@@ -30,5 +30,3 @@ typewriter
   .pauseFor(150)
   .typeString('problem solver.')
   .start();
-
-  

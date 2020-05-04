@@ -11,7 +11,10 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #ff6600;
   font-weight: 900;
   margin-left: 5%;
@@ -20,11 +23,18 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 4em;
 }
-h2{
+
+h2 {
   font-size: 3em;
 }
-h3{
+
+h3 {
   font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2em;
+  display: inline;
 }
 
 p {
@@ -36,6 +46,7 @@ p {
 hr {
   color: #ff6600;
 }
+
 /* Scroll bar */
 
 .progress-bar {
@@ -44,10 +55,13 @@ hr {
   top: 0;
   z-index: 1;
 }
+
 .progress {
+  background-color: #222222;
   height: 5px;
   width: 100%;
 }
+
 #bar {
   background-color: #ff6600;
   border-radius: 2.5px;
@@ -66,39 +80,6 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* Flex */
-
-.container {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.item{
-  flex-basis: auto;
-  padding: 2em;
-  width: 40%;
-}
-
-/* skills flex */
-
-.column{
-width: 50%;
-flex-basis: auto;
-}
-
-.item-skill {
-  flex-basis: auto;
-  width: 25%;
-}
-
-
-@media all and (max-width: 800px) {
-  .item {
-    width: 100%;
-  }
-  }
 
 /* NAV */
 
@@ -112,7 +93,7 @@ flex-basis: auto;
 
 #mySidenav a {
   position: fixed;
-  left: -7.5em;
+  left: -7em;
   transition: 0.3s;
   padding: .5em;
   width: 8em;
@@ -122,7 +103,7 @@ flex-basis: auto;
   border-radius: 0 5px 5px 0;
 }
 
-#mySidenav a:hover {
+#mySidenav a:hover{
   background-color: #fff;
   color: #ff6600;
   left: 0;
@@ -153,11 +134,11 @@ flex-basis: auto;
   color: #ff6600;
 }
 
-#header{
-height: 75%;
+#header {
+  height: 75%;
 }
 
-.hero{
+.hero {
   height: 100%;
   width: max-content;
 }
@@ -176,7 +157,7 @@ height: 75%;
 
 .social-link {
   color: #ff6600;
-  margin: 20px;
+  margin: 2em;
 }
 
 .social-link:hover {
@@ -184,6 +165,10 @@ height: 75%;
 }
 
 /* SKILLS */
+#skills{
+
+}
+
 
 .container-skills {
   background-color: #444444;
@@ -197,7 +182,7 @@ height: 75%;
   color: #fff;
   text-align: right;
   padding: .75em 0em .75em .75em;
- 
+
 }
 
 .html {

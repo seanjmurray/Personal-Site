@@ -4,22 +4,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="I'm a 24 year old Army Veteran from Upstate NY, turned front end web developer. I am currently avaliable to do freelance work. I love developing and I am always up for a good challenge.">
+  <meta name="description"
+    content="I'm a 24 year old Army Veteran from Upstate NY, turned front end web developer. I am currently avaliable to do freelance work. I love developing and I am always up for a good challenge.">
   <meta name="author" content="Sean Murray">
 
   <title>Sean Murray</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="sean.ico">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|Raleway:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|Raleway:300&display=swap"
+    rel="stylesheet">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/b70e821b8b.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/styles.css">
   <!-- Typewriter -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
+
 <body>
   <div class="progress-bar">
     <div class="progress">
@@ -35,110 +41,143 @@
     <a id="ctaNav" class="nav-item" href="#cta">Hire Me</a>
   </div>
 
-  <section id="header" class="parallax">  
-    <div class="hero">
+  <section id="header" class="parallax">
+    <div class="container">
       <div class="header-text">
         <h1>Hello,<br />I'm Sean.</h1>
         <h2><span id="typeWrite"></span></h2>
       </div>
     </div>
   </section>
-  <section id="about">
-    <div class="container">
-      <div class="item">
+  <section id="about" class="container">
+    <div class="row">
+      <div class="col-md-6">
         <h3>A little about me.</h3>
         <p>
-          I'm a 24 year old Army Veteran from Upstate NY, turned web developer. I love all things outdoors from rock climbing to skydiving. I probably have a cup of coffee in arms reach right now or wish I did. I am currently available to do
+          I'm a 24 year old Army Veteran from Upstate NY, turned web developer. I love all things outdoors from rock
+          climbing to skydiving. I probably have a cup of coffee in arms reach right now or wish I did. I am currently
+          available to do
           freelance work. I am always up for a good challenge.
         </p>
-        <a target="_blank" href="https://twitter.com/seanjmurray1" class="social-link"><i class="fab fa-twitter-square fa-2x"></i></a>
-    
-        <a target="_blank" href="https://www.linkedin.com/in/sean-murray-b461801a2/" class="social-link"><i class="fab fa-linkedin fa-2x"></i></a>
-    
-        <a target="_blank" href="https://github.com/seanjmurray/" class="social-link"><i class="fab fa-github-square fa-2x"></i></a>
-    
-        <a target="_blank" href="https://www.reddit.com/user/seantrystocode" class="social-link"><i class="fab fa-reddit-square fa-2x"></i></a>
+        <a target="_blank" href="https://twitter.com/seanjmurray1" class="social-link"><i
+            class="fab fa-twitter-square fa-2x"></i></a>
+
+        <a target="_blank" href="https://www.linkedin.com/in/sean-murray-b461801a2/" class="social-link"><i
+            class="fab fa-linkedin fa-2x"></i></a>
+
+        <a target="_blank" href="https://github.com/seanjmurray/" class="social-link"><i
+            class="fab fa-github-square fa-2x"></i></a>
+
+        <a target="_blank" href="https://www.reddit.com/user/seantrystocode" class="social-link"><i
+            class="fab fa-reddit-square fa-2x"></i></a>
       </div>
-      <div class="item">
+      <div class="col-md-6">
         <img src="CSS/images/bike.jpeg" alt="Image not found" class="about-img">
       </div>
     </div>
   </section>
-  <section id="skills">
+  <section id="skills" class="container">
     <h3>What I bring to the table.</h3>
-<div class="container">
-  <div class="row">
-    <div>
-      <h4>In the frontend.</h4>
-    </div>
-    <div class="item-skill">
-      <i class="skills fab fa-html5 fa-5x"></i>
-      <p>
-        I promise I can put your content where you want it to be.
-      </p>
-      <div class="container-skills">
-        <div class="skills html"><span style="color: #222222;">90%</span></div>
-      </div>
-    </div>
+    <p>
+      I do most of my work from a MacBook pro, using either Atom or VS Code. 
+    </p>
+    <div class="row">
+      <div class="row justify-content-between">
+        <div class="col-sm-5">
+          <div class="row">
+            <div class="col-12">
+              <h4>In the frontend.</h4>
+            </div>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-lg-3 col-md-6">
+              <div class="item-skill">
+                <i class="skills fab fa-html5 fa-5x"></i>
+                <p>I promise I can put your content where you want it to be.</p>
+                <div class="container-skills">
+                  <div class="skills html"><span style="color: #222222;">90%</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="item-skill">
+                <i class="skills fab fa-css3 fa-5x"></i>
+                <p>I also can make that content look exactly how you want.</p>
+                <div class="container-skills">
+                  <div class="skills css"><span style="color: #222222;">80%</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="item-skill">
+                <i class="skills fab fa-js fa-5x"></i>
+                <p>I can make that same content do what you want it too.</p>
+                <div class="container-skills">
+                  <div class="skills js"><span style="color: #222222;">85%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="item-skill">
-      <i class="skills fab fa-css3 fa-5x"></i>
-      <p>I also can make that content look exactly how you want.</p>
-      <div class="container-skills">
-        <div class="skills css"><span style="color: #222222;">80%</span></div>
-      </div>
-    </div>
-
-    <div class="item-skill">
-      <i class="skills fab fa-js fa-5x"></i>
-      <p>I can make that same content do what you want it too.</p>
-      <div class="container-skills">
-        <div class="skills js"><span style="color: #222222;">85%</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div>
-      <h4 class="display-4">And the backend.</h4>
-    </div>
-    <div class="item-skill">
-      <i class="skills fab fa-node-js fa-5x"></i>
-      <p>Who doesn't like web apps or API's.</p>
-      <div class="container-skills">
-        <div class="skills node"><span style="color: #222222;">80%</span></div>
-      </div>
-    </div>
-
-    <div class="item-skill">
-      <i class="skills fas fa-database fa-5x"></i>
-      <p>I can tailor make a simple, effect, and safe database for your information.</p>
-      <div class="container-skills">
-        <div class="skills sql"><span style="color: #222222;"> SQL 55%</span></div>
-        <div class="container-skills">
-          <div class="skills nosql"><span style="color: #222222;">NoSQL 70%</span></div>
+        <div class="col-sm-5">
+          <div class="row">
+            <div class="col-12">
+              <h4>And the backend.</h4>
+            </div>
+          </div>
+          <div class="row justify-content-around">
+            <div class="col-lg-3 col-md-6">
+              <div class="item-skill">
+                <i class="skills fab fa-node-js fa-5x"></i>
+                <p>Who doesn't like web apps or API's.</p>
+                <div class="container-skills">
+                  <div class="skills node"><span style="color: #222222;">80%</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="item-skill">
+                <i class="skills fas fa-database fa-5x"></i>
+                <p>I can tailor make a simple, effect, and safe database for your information.</p>
+                <div class="container-skills">
+                  <div class="skills sql"><span style="color: #222222;"> SQL 55%</span></div>
+                  <div class="container-skills">
+                    <div class="skills nosql"><span style="color: #222222;">NoSQL 70%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="item-skill">
+                <i class="skills fas fa-lock fa-5x"></i>
+                <p>Want people to feel safe when they login into your site? I can make that happen.</p>
+                <div class="container-skills">
+                  <div class="skills security"><span style="color: #222222;">75%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="item-skill">
-      <i class="skills fas fa-lock fa-5x"></i>
-      <p>Want people to feel safe when they login into your site? I can make that happen.</p>
-      <div class="container-skills">
-        <div class="skills security"><span style="color: #222222;">75%</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </section>     
   <footer class="container">
     <p class="footer">&copy 2020 Sean Murray</p>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
-
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="JS/index.js" charset="utf-8"></script>
 </body>
 
 </html>
