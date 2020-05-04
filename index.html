@@ -12,190 +12,130 @@
   <link rel="shortcut icon" href="sean.ico">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|Raleway:300&display=swap" rel="stylesheet">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/b70e821b8b.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- CSS -->
+  <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/styles.css">
   <!-- Typewriter -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
 </head>
-
 <body>
-  <div id="mySidenav" class="sidenav">
-    <a id="headerNav" href="#header">Home</a>
-    <a id="aboutNav" href="#about">About</a>
-    <a id="skillsNav" href="#skills">Skills</a>
-    <a id="projectsNav" href="#projects">Projects</a>
-    <a id="ctaNav" href="#cta">Hire Me</a>
+  <div class="progress-bar">
+    <div class="progress">
+      <div id="bar"></div>
+    </div>
   </div>
-  <section id="header">
-    <div class="headerText jumbotron-fluid">
-      <h1 class="headerH1 display-1">Hello,<br />I'm Sean.</h1>
-      <h2 class="headerH2 display-3"><span id="typeWrite"></span></h2>
+
+  <div id="mySidenav" class="sidenav">
+    <a id="headerNav" class="nav-item" href="#header">Home</a>
+    <a id="aboutNav" class="nav-item" href="#about">About</a>
+    <a id="skillsNav" class="nav-item" href="#skills">Skills</a>
+    <a id="projectsNav" class="nav-item" href="#projects">Projects</a>
+    <a id="ctaNav" class="nav-item" href="#cta">Hire Me</a>
+  </div>
+
+  <section id="header" class="parallax">  
+    <div class="hero">
+      <div class="header-text">
+        <h1>Hello,<br />I'm Sean.</h1>
+        <h2><span id="typeWrite"></span></h2>
+      </div>
     </div>
   </section>
-  <hr>
-  <section id="about" class="container-fluid margin">
-    <div class="row">
-      <div class="col">
-        <h3 class="display-3">A little about me.</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg">
-        <p>I'm a 24 year old Army Veteran from Upstate NY, turned web developer. I love all things outdoors from rock climbing to skydiving. I probably have a cup of coffee in arms reach right now or wish I did. I am currently available to do
-          freelance work. I am always up for a good challenge.</p>
+  <section id="about">
+    <div class="container">
+      <div class="item">
+        <h3>A little about me.</h3>
+        <p>
+          I'm a 24 year old Army Veteran from Upstate NY, turned web developer. I love all things outdoors from rock climbing to skydiving. I probably have a cup of coffee in arms reach right now or wish I did. I am currently available to do
+          freelance work. I am always up for a good challenge.
+        </p>
         <a target="_blank" href="https://twitter.com/seanjmurray1" class="social-link"><i class="fab fa-twitter-square fa-2x"></i></a>
+    
         <a target="_blank" href="https://www.linkedin.com/in/sean-murray-b461801a2/" class="social-link"><i class="fab fa-linkedin fa-2x"></i></a>
+    
         <a target="_blank" href="https://github.com/seanjmurray/" class="social-link"><i class="fab fa-github-square fa-2x"></i></a>
+    
         <a target="_blank" href="https://www.reddit.com/user/seantrystocode" class="social-link"><i class="fab fa-reddit-square fa-2x"></i></a>
       </div>
-      <div class="col-lg">
+      <div class="item">
         <img src="CSS/images/bike.jpeg" alt="Image not found" class="about-img">
       </div>
     </div>
   </section>
-  <hr>
   <section id="skills">
-    <div class="container-fluid margin">
-      <div class="row">
-        <div class="col">
-          <h3 class="display-3">What I bring to the table.</h3>
-        </div>
+    <h3>What I bring to the table.</h3>
+<div class="container">
+  <div class="row">
+    <div>
+      <h4>In the frontend.</h4>
+    </div>
+    <div class="item-skill">
+      <i class="skills fab fa-html5 fa-5x"></i>
+      <p>
+        I promise I can put your content where you want it to be.
+      </p>
+      <div class="container-skills">
+        <div class="skills html"><span style="color: #222222;">90%</span></div>
       </div>
-      <div class="row">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h4 class="display-4">In the frontend.</h4>
-              <h5 class="display-6">These progress bars represent my level of competency.</h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg">
-              <i class="skills fab fa-html5 fa-5x"></i>
-              <p>
-                I promise I can put your content where you want it to be.
-              </p>
-              <div class="container-skills">
-                <div class="skills html"><span style="color: #222222;">90%</span></div>
-              </div>
+    </div>
 
-            </div>
-            <div class="col-lg">
-              <i class="skills fab fa-css3 fa-5x"></i>
-              <p>I also can make that content look exactly how you want.</p>
-              <div class="container-skills">
-                <div class="skills css"><span style="color: #222222;">80%</span></div>
-              </div>
-            </div>
-            <div class="col-lg">
-              <i class="skills fab fa-js fa-5x"></i>
-              <p>I can make that same content do what you want it too.</p>
-              <div class="container-skills">
-                <div class="skills js"><span style="color: #222222;">70%</span></div>
-              </div>
-            </div>
-            <div class="col-lg">
-              <i class="skills fab fa-bootstrap fa-5x"></i>
-              <p>That content can also be super responsive.</p>
-              <div class="container-skills">
-                <div class="skills boot"><span style="color: #222222;">85%</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h4 class="display-4">And the backend.</h4>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg">
-              <i class="skills fab fa-node-js fa-5x"></i>
-              <p>Who doesn't like web apps or API's.</p>
-              <div class="container-skills">
-                <div class="skills node"><span style="color: #222222;">80%</span></div>
-              </div>
-            </div>
-            <div class="col-lg">
-              <i class="skills fas fa-database fa-5x"></i>
-              <p>I can tailor make a simple, effect, and safe database for your information.</p>
-              <div class="container-skills">
-                <div class="skills sql"><span style="color: #222222;"> SQL 55%</span></div>
-                <div class="container-skills">
-                  <div class="skills nosql"><span style="color: #222222;">NoSQL 70%</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg">
-              <i class="skills fas fa-lock fa-5x"></i>
-              <p>Want people to feel safe when they login into your site? I can make that happen.</p>
-              <div class="container-skills">
-                <div class="skills security"><span style="color: #222222;">75%</span></div>
-              </div>
-            </div>
-          </div>
+    <div class="item-skill">
+      <i class="skills fab fa-css3 fa-5x"></i>
+      <p>I also can make that content look exactly how you want.</p>
+      <div class="container-skills">
+        <div class="skills css"><span style="color: #222222;">80%</span></div>
+      </div>
+    </div>
+
+    <div class="item-skill">
+      <i class="skills fab fa-js fa-5x"></i>
+      <p>I can make that same content do what you want it too.</p>
+      <div class="container-skills">
+        <div class="skills js"><span style="color: #222222;">85%</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div>
+      <h4 class="display-4">And the backend.</h4>
+    </div>
+    <div class="item-skill">
+      <i class="skills fab fa-node-js fa-5x"></i>
+      <p>Who doesn't like web apps or API's.</p>
+      <div class="container-skills">
+        <div class="skills node"><span style="color: #222222;">80%</span></div>
+      </div>
+    </div>
+
+    <div class="item-skill">
+      <i class="skills fas fa-database fa-5x"></i>
+      <p>I can tailor make a simple, effect, and safe database for your information.</p>
+      <div class="container-skills">
+        <div class="skills sql"><span style="color: #222222;"> SQL 55%</span></div>
+        <div class="container-skills">
+          <div class="skills nosql"><span style="color: #222222;">NoSQL 70%</span></div>
         </div>
       </div>
     </div>
-  </section>
-  <hr>
-  <section id="projects">
-    <div class="container-fluid margin">
-      <h3 class="display-3">Some of my work.</h3>
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-4">
-          <h5>Node Blog.</h6>
-            <a href="https://agile-fortress-22842.herokuapp.com/" target="_blank"><img class="img-fluid projectsImg" src="CSS/images/blog.png" alt="Blog screenshot"></a>
-            <p>This is a simple blog built with node and express. It has a hidden compose page, a MongoDB, and styling from Bootstrap.</P>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <h5>Todolist web app.</h6>
-            <a href="https://vast-waters-43630.herokuapp.com/" target="_blank"><img class="img-fluid projectsImg" src="CSS/images/todolist.png" alt="Todolist screenshot"></a>
-            <p>A simple todolist built with node and express. Users can create their own custom lists, all data is stored in a mongoDB.</p>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <h5>Tindog app site.</h6>
-            <a href="https://seanjmurray.github.io/Tindog/ " target="_blank"><img class="img-fluid projectsImg" src="CSS/images/tindog.png" alt="Tindog screenshot"></a>
-            <p>This site is a mock app site. Its built to be responsive with Bootstrap.</p>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <h5>Newsletter signup.</h5>
-          <a href="https://calm-waters-78690.herokuapp.com/" target="_blank"><img class="img-fluid projectsImg" src="CSS/images/newsletter.png" alt="Newsletter screenshot"></a>
-          <p>This is a node app. It is a simple signup form for a mailchip email list. built using node, express, and the mailchimp API.</p>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <h5>Simon JS game</h5>
-          <a href="https://seanjmurray.github.io/Simon-game/" target="_blank"><img class="img-fluid projectsImg" src="CSS/images/simon.png" alt="Simon game screenshot"></a>
-          <p>This is a pure JavaScript game of simon. Built using JS, HTML, and CSS.</p>
-        </div>
+
+    <div class="item-skill">
+      <i class="skills fas fa-lock fa-5x"></i>
+      <p>Want people to feel safe when they login into your site? I can make that happen.</p>
+      <div class="container-skills">
+        <div class="skills security"><span style="color: #222222;">75%</span></div>
       </div>
     </div>
-  </section>
-  <hr>
-  <section id="cta">
-    <h2 class="margin ctaText display-2">
-      Have a project in mind?<br />
-      Want to know more about me?<br />
-      Just want to say Hi?
-    </h2>
-    <a href="mailto:sean@seanjmurray.tech" type="button" class="btn btn-lg cta-btn"><i class="far fa-envelope"></i> Email me</a>
-    <a href="images/SeanMurrayResume.pdf" type="button" class="btn btn-lg cta-btn" download><i class="fas fa-file-download"></i> Download Resume</a>
-  </section>
+  </div>
+</div>
+
+  </section>     
   <footer class="container">
     <p class="footer">&copy 2020 Sean Murray</p>
   </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
 
